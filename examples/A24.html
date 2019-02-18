@@ -86,7 +86,7 @@
 
 				// Model  //models/gltf/test/A24gltf/_A_24.gltf
 				var loader = new THREE.GLTFLoader().setPath( 'models/gltf/test/GLTF_test/' );
-				loader.load( 'UYUUI.gltf', function ( gltf ) {
+				loader.load( '_A_24.gltf', function ( gltf ) {
 
 					gltf.scene.traverse( function ( child ) {
 
@@ -102,7 +102,7 @@
 
 					// 呼叫動畫
 					mixer = new THREE.AnimationMixer( gltf.scene );
-					mixer.clipAction( gltf.animations[ 1 ] ).play();
+					mixer.clipAction( gltf.animations[ 0 ] ).play();
 					/*
         			var mixer = new THREE.AnimationMixer( gltf.scene.children[2] ); 
        				mixer.clipAction( gltf.animations[ 0 ] ).setDuration( 1 ).play();
